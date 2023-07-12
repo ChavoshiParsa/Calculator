@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient( rgb(101, 20, 155), rgb(109, 203, 232));
+  background-attachment: fixed;
+}
+
+.screen {
+  height: 200px;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 5px 5px;
+}
+
+.displayI {
+  color: rgb(107, 63, 212);
+  font: 18px verdana;
+  margin-bottom: 80px;
+  align-self: flex-start;
+}
+
+.displayP {
+  color: rgb(147, 147, 147);
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.displayC {
+  color: rgb(61, 61, 61);
+  font-size: 44px;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 4px;
+  height: 560px;
+  width: 280px;
+  border: 5px solid;
+  border-radius: 20px;
+  background-color: rgb(239, 239, 239);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 6px;
+}
+
+.container>div {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 26px;
+  font-family: Inter, Geneva, Tahoma, sans-serif;
+  color: rgb(50, 50, 50);
+}
+
+.container>div:hover {
+  background-color: rgb(0, 157, 210);
+}
+
+#nv:hover {
+  background-color: rgb(0, 157, 210);
+}
+
+.container>.operator {
+  background-color: darkorange;
+}
+
+.container>.number {
+  background-color: white;
+}
+
+.ov {
+  grid-column: auto/span 2;
+  background-color: darkorange;
+}
+
+#nv {
+  grid-column: auto/span 2;
+  background-color: white;
+}
+
+.AC {
+  background-color: darkorange;
+}
